@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Musik Seite</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css\\style1.css">
+
+		<script>
+            var liste;
+            function ladXMLDoc() {
+                var requester = (window.XMLHttpRequest)
+                                     ? new XMLHttpRequest()
+                                     : new ActiveXObject("Microsoft.XMLHTTP");
+
+                requester.onreadystatechange = function() {
+                    if(requester.readyState==4 && requester.status==200) {
+                        parseXML(requester);
+                    }
+                } 
+                requester.open("GET", "katalog.xml", true);
+                 requester.send();      
+            }
+           
+
+            function parseXML(xml) {
+                var xmlDoc = xml.responseXML;
+
+                 liste = xmlDoc.getElementsByTagName("CD");
+                var table = "<div></div>"
+                for(var i = 0; i<liste.length; i++) {
+                    table = table+"<div onclick='showDetai("+i+")'>";
+                    table+="<figure><img id='foto1' src= '";
+                    table=table+liste[i].getElementsByTagName("IMAGE")[0].firstChild.nodeValue;
+                    table+="' width='30%;'></figure>";
+                    
+                    table=table+"</div>";
+                }
+
+                document.getElementById("tableview").innerHTML = table;
+                console.log(table);
+               
+            }
+
+            function showDetai(i) {
+                var temp="<p>";
+                temp+="KÜnstler: "+liste[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+                "<br>Land: "
+                +liste[i].getElementsByTagName("COUNTRY")[0].firstChild.nodeValue +
+                "<br>Title: " +
+                liste[i].getElementsByTagName("TITLE")[0].firstChild.nodeValue +
+                "<br>Jahr : "+
+                liste[i].getElementsByTagName("YEAR")[0].firstChild.nodeValue +
+                "<br>Preis: " +
+                liste[i].getElementsByTagName("PRICE")[0].firstChild.nodeValue +
+                "<br>Genre: " +
+                liste[i].getElementsByTagName("GENRE")[0].firstChild.nodeValue +
+                "<br><br> <audio controls muted><source src='" +
+                liste[i].getElementsByTagName("SOURCE")[0].firstChild.nodeValue +
+                "' type='audio/mpeg'></p>";
+               document.getElementById("details").innerHTML=temp;
+                    console.log("test");
+                    console.log(temp);
+                    
+            }
+    
+        </script>
+    </head>
+
+    <body>
+         <header> 
+            <div id="logo">
+                <a href="index1.html"><img src="Foto\\logo4.png" alt ="Logo"> DJ Musik</a>
+            </div>
+                <nav id="main-nav">
+                    <ul>
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="#">kontakt</a></li>
+                        <li><a href="login.php">login </a></li>
+                    </ul>
+                </nav>
+            </header> <br> <br><br>
+        <div container-fluid>    
+        <h1><img src="Foto//logo4.png" alt="logo"> DJ Musik</h1>  
+        <button type="button" onclick="ladXMLDoc()">play liste</button>
+        <img id="foto" src="Foto\\musik1.jpg" alt="Musik Foto">
+        
+        
+        <br><br>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <p id='details'></p>
+                <p id='hinweis'></p> 
+                <p id="demo"></p>
+
+        <div id="tableview">
+    </div>
+        
+        </div>
+      </div> 
+    </body>
+
+
+</html>

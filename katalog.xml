@@ -1,0 +1,72 @@
+<CATALOG>
+<CD>
+<TITLE>Be the One</TITLE>
+<SOURCE>Musik\BeTheOne.mp3</SOURCE>
+<IMAGE>Foto\Dua-lipa.jpg</IMAGE>
+<ARTIST>Dua Lipa</ARTIST>
+<COUNTRY>England</COUNTRY>
+<PRICE>10.90</PRICE>
+<GENRE>Pop</GENRE>
+<YEAR>2015</YEAR>
+</CD>
+<CD>
+<TITLE>Sigueme y Te Sigo</TITLE>
+<SOURCE>Musik\SiguemeySigo.mp3</SOURCE>
+<IMAGE>Foto\Daddy-yankee.jpg</IMAGE>
+<ARTIST>Daddy Yankee</ARTIST>
+<COUNTRY>US</COUNTRY>
+<PRICE>12.90</PRICE>
+<GENRE>Pop</GENRE>
+<YEAR>2015</YEAR>
+</CD>
+<CD>
+<TITLE>Nereden Bileceksiniz</TITLE>
+<SOURCE>Musik\NeredenBileceksiniz.mp3</SOURCE>
+<IMAGE>Foto\Ahmet-kaya.jpg</IMAGE>
+<ARTIST>Ahmet Kaya</ARTIST>
+<COUNTRY>Türkei</COUNTRY>
+<PRICE>11,99</PRICE>
+<GENRE>Classic</GENRE>
+<YEAR>1998</YEAR>
+</CD>
+<CD>
+<TITLE>Felices Los 4</TITLE>
+<SOURCE>Musik\FelicesLos.mp3</SOURCE>
+<IMAGE>Foto\Maluma.jpg</IMAGE>
+<ARTIST>Maluma</ARTIST>
+<COUNTRY>Columbia</COUNTRY>
+<PRICE>11,99</PRICE>
+<GENRE>Pop</GENRE>
+<YEAR>2017</YEAR>
+</CD>
+<CD>
+<TITLE>Chantaje</TITLE>
+<SOURCE>Musik\Chantaje.mp3</SOURCE>
+<IMAGE>Foto\Shakira.jpg</IMAGE>
+<ARTIST>Shakira-Maluma</ARTIST>
+<COUNTRY>Columbia</COUNTRY>
+<GENRE>Pop</GENRE>
+<PRICE>11,99</PRICE>
+<YEAR>2017</YEAR>
+</CD>
+<CD>
+<TITLE>Bonbon</TITLE>
+<SOURCE>Musik\Bonbon.mp3</SOURCE>
+<IMAGE>Foto\EraIstrefi.png</IMAGE>
+<ARTIST>Era Istrefi</ARTIST>
+<COUNTRY>Kosovo Albanian</COUNTRY>
+<GENRE>dance-pop‎</GENRE>
+<PRICE>11,99</PRICE>
+<YEAR>2015</YEAR>
+</CD>
+<CD>
+<TITLE>Nereden Bileceksiniz</TITLE>
+<SOURCE>Musik\NeredenBileceksiniz.mp3</SOURCE>
+<IMAGE>Foto\Ahmet-kaya.jpg</IMAGE>
+<ARTIST>Ahmet Kaya</ARTIST>
+<COUNTRY>Turkai</COUNTRY>
+<GENRE>Classic</GENRE>
+<PRICE>11,99</PRICE>
+<YEAR>1998</YEAR>
+</CD>
+</CATALOG>

@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #222f3e;
+}
+
+a {text-decoration: none; color: #01a3a4;}
+li {list-style-type: none;}
+li #logo {
+    transition: all 300ms; -webkit-transition: all 300ms;
+}
+
+h1 {
+    font-style:italic;
+    font-weight: 900;
+    color:white;
+    text-align: center;
+    
+}
+
+h1 img {
+    margin: 0 0 0 10px;
+    background:white;
+    width: 70px;
+    border-radius: 50%
+}
+
+ 
+ 
+            /******* HEADER UND NAVIGATION **********/
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:#081927;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+
+
+#logo {
+    width: 140px;
+    float: left;
+    margin: 3px 0 0 50px;
+}
+
+#logo:hover {
+    opacity: 0.5;
+}
+
+#logo img {
+    width: 35%;
+   border-radius: 45%
+}
+
+header nav {
+    float: right;
+    margin: 5px 50px 0 0;
+}
+
+header nav ul li {
+    float: left;
+    margin-right: 25px;
+}
+
+header nav ul li a {
+    font-size: 18px;
+}
+
+header nav ul li:hover {
+    padding-top: 5px;
+}
+
+            /******* LOGIN *****/
+.login {
+    width: 20%;
+    padding: 50px;
+    position:absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50, -50);
+    background: #191919;
+    text-align: center;
+}
+
+.par {
+    color: rgb(150, 21, 21);
+    text-align: center;
+}
+
+.login h2 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.login h3 {
+    color:white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.login input[type = "text"], .login input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0,25s;
+}
+
+.login input[type = "text"]:focus, .login input[type = "password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+
+}
+
+.login input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0,25s; 
+}
+
+.login input[type = "submit"]:hover {
+    background: #2ecc71;
+}
